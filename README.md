@@ -15,14 +15,23 @@ A high-performance Next.js website for professional energy certificate services 
 
 ### 🎯 Performance Results
 
-This Next.js implementation significantly outperforms the original WordPress version:
+Page-by-page Lighthouse comparison (WordPress vs. Next.js) on Desktop. Fill in the remaining rows with your page measurements.
 
-| Metric | WordPress | Next.js | Improvement |
-|--------|-----------|---------|-------------|
-| **Performance** | 49 | 89 | +81.6% |
-| **Accessibility** | 95 | 94 | -1.1% |
-| **Best Practices** | 96 | 100 | +4.2% |
-| **SEO** | 100 | 100 | Maintained |
+| Page | Perf (WP) | Perf (Next) | Δ% | Acc (WP) | Acc (Next) | Δ% | BP (WP) | BP (Next) | Δ% | SEO (WP) | SEO (Next) | Δ% |
+|------|-----------|-------------|----|----------|------------|----|---------|-----------|----|----------|------------|----|
+| Home (`/`) | 86 | 100 | 16,28% | 95 | 94 | -1,05% | 96 | 96 | 0,00% | 100 | 100 | 0,00% |
+| Ausweistyp (`/ausweistyp`) | 89 | 100 | 12,36% | 89 | 96 | 7,87% | 100 | 96 | -4,00% | 100 | 100 | 0,00% |
+| Kontakt (`/kontakt`) | 96 | 100 | 4,17% | 92 | 96 | 4,35% | 100 | 96 | -4,00% | 100 | 100 | 0,00% |
+| Ablauf (`/ablauf`) | 90 | 100 | 11,11% | 96 | 96 | 0,00% | 100 | 96 | -4,00% | 100 | 100 | 0,00% |
+| Unterlagen (`/unterlagen`) | 71 | 100 | 40,85% | 95 | 96 | 1,05% | 81 | 96 | 18,52% | 100 | 100 | 0,00% |
+| Festpreis (`/festpreis`) | 91 | 100 | 9,89% | 86 | 94 | 9,30% | 100 | 96 | -4,00% | 92 | 100 | 8,70% |
+| Datenschutzerklärung (`/datenschutzerklaerung`) | 81 | 100 | 23,46% | 96 | 96 | 0,00% | 100 | 96 | -4,00% | 92 | 100 | 8,70% |
+| Impressum (`/impressum`) | 77 | 100 | 29,87% | 97 | 92 | -5,15% | 100 | 96 | -4,00% | 100 | 100 | 0,00% |
+| Average | - | - | **18,50%** | - | - | **2,05%** | - | - | **-0,69%** | - | - | **2,17%** |
+
+Notes
+- Δ% = (Next / WP) - 1. Keep 2 decimal places.
+- Measurements were taken with [Google PageSpeed Insights](https://pagespeed.web.dev/).
 
 ## 🏗️ Architecture & Features
 
